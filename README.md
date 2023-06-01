@@ -6,6 +6,6 @@ All AMR NLI data, (including more than 1,500,000 parses) can be downloaded [here
 
 Note that in the paper we only use dev and test sets, however, graphs of the NLI training data are included too.
 
-## evaluation script
+## Evaluation script and metrics
 
-Evaluation scripts is coming. Metrics are freely available.
+Evaluation scripts and info on how to run metrics is coming.
