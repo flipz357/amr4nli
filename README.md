@@ -1,4 +1,4 @@
-# amr4nli
+# AMR4NLI
 
 ## Data
 
