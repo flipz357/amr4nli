@@ -13,7 +13,7 @@ Note that in [our paper](https://arxiv.org/abs/2306.00936) we only use dev and t
 - [SmatchP](https://github.com/flipz357/smatchpp): use smatch precision to check whether H is entailed by P
 - [WWLKP (Wasserstein AMR)](https://github.com/flipz357/weisfeiler-leman-amr-metrics): run with `-k 1` and `-prs p` 
 - Node Mover: use Wasserstein AMR with `-k 0`.
-- Graph token precision: see toy example below.
+- Graph token precision: see example below.
 
 ### Eval instruction:
 
@@ -28,7 +28,7 @@ See the simple example that comes below.
 
 2. Evaluate AUC for entailment: `./eval.sh simpleMetricP`
 
-Explanation: in the first step we execute a (toy) graph metric over all the data, for measuring graph overlap precision. It generates predictions in `sim-predictions/`. In the second step we evaluate the predictions against human gold ratings via AUC.
+Explanation: in the first step we execute a graph metric over all the data (the metric measures simple graph token precision). It generates predictions in `sim-predictions/`. In the second step we evaluate the predictions against human gold ratings via AUC.
 
 Running your metric: it should be quite simple, you just need to execute it in the same way as shown in `./run-simple-metric.sh`. If your metric provides one score per graph pair on each single line, you're good to go.
 
