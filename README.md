@@ -26,9 +26,9 @@ See the simple example that comes below.
 
 1. run a metric on all data: `./run-simple-metric.sh` 
 
-2. Evaluate AUC for entailment: `./eval.sh` simpleMetricP
+2. Evaluate AUC for entailment: `./eval.sh simpleMetricP`
 
-Explanation: in the first step we execute a (toy) graph metric over all the data, for measuring graph overlap precision. In the second step we evaluate its predictions against human gold ratings via AUC.
+Explanation: in the first step we execute a (toy) graph metric over all the data, for measuring graph overlap precision. It generates predictions in `sim-predictions/`. In the second step we evaluate the predictions against human gold ratings via AUC.
 
 Running your metric: it should be quite simple, you just need to execute it in the same way as shown in `./run-simple-metric.sh`. If your metric provides one score per graph pair on each single line, you're good to go.
 
